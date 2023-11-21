@@ -1,5 +1,6 @@
 
 import './App.css';
+import About from './components/about';
 import Home from './components/home';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 function App() { 
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <QueryClientProvider client={client}>
         <Home/>
+        <About/>
       </QueryClientProvider>
       
     </div>
