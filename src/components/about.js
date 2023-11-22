@@ -6,7 +6,7 @@ import { useQuery } from '@tanstack/react-query'
 const About = () => {
 const {data, isError,isLoading,refetch}= useQuery(
     {
-        queryKey: ["cat"],
+        queryKey: ["activity"],
         queryFn:()=>axios.get('https://www.boredapi.com/api/activity').then((res)=> res.data)
     }
 )
