@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/about';
 import Home from './components/home';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
+import Jokes from './components/jokes';
 function App() { 
   const client= new QueryClient({defaultOptions:{
     queries:{
@@ -14,6 +15,7 @@ function App() {
       <QueryClientProvider client={client}>
         <Home/>
         <About/>
+        <Jokes/>
       </QueryClientProvider>
       
     </div>
